@@ -18,16 +18,19 @@ export async function generateMetadata({params}){
 
 export default function ProductPage({ params }) {
   const product = getProductDetail(params.productNo);
-  if(!product){
-    notFound()
-  };
+
+  if (!product) {
+    return notFound(); // Ensure notFound() correctly handles missing products
+  }
 
   return (
     <>
       <header className={classes.header}>
-        <div className={classes.image}>
-          <Image fill src={product.image} alt={product.title} />
-        </div>
+        {product.image && (
+          <div className={classes.image}>
+            <Image fill src={product.image} alt={product.title} />
+          </div>
+        )}
         <div className={classes.headerText}>
           <h1>{product.title}</h1>
           <p className={classes.summary}>{product.summary}</p>
@@ -37,3 +40,4 @@ export default function ProductPage({ params }) {
     </>
   );
 }
+
