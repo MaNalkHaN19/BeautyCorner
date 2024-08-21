@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  flex-direction: row; /* Adjust for layout */
+  align-items: center;
+  text-align: center;
+  margin: 3rem auto;
+  margin-top: 6rem;
+  width: 90%;
+  max-width: 75rem;
+}
+
+.slideshow {
+  width: 40rem;
+  height: 20rem;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #e3dbcc;
+  font-size: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ce927e, #b32047);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta {
+  margin-left: 6rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #ddd6cb;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #e9a17a, #61accd);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cta a:hover,
+.cta a:active {
+  background: linear-gradient(90deg, #de5252, #71a29d);
+}
+
+.cta a:first-child {
+  background: transparent;
+  font-weight: normal;
+  color: #c2503e;
+  padding-left: 0;
+}
+
+.cta a:first-child:hover,
+.cta a:first-child:active {
+  background: transparent;
+  color: #f9b241;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  color: #ddd6cb;
+  font-size: 1.5rem;
+  max-width: 50rem;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}

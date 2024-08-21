@@ -1,0 +1,40 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    animation: fadeInOut 5s infinite;
+  }
+  
+  /* Different starting positions for each line */
+  .line:nth-child(1) {
+    left: 20px;
+  }
+  .line:nth-child(2) {
+    left: 50px;
+  }
+  .line:nth-child(3) {
+    left: 80px;
+  }
+  /* Add more lines and adjust positions as needed */
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

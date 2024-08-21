@@ -1,0 +1,26 @@
+.link {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: #cf9c4b;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+
+}
+
+.link:hover,
+.link:active {
+  background: linear-gradient(90deg, #b46307, #ab7a1d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 18px rgba(201, 158, 48, 0.8);
+}
+
+.active {
+  background: linear-gradient(90deg, #ab5c02, #d0962b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
